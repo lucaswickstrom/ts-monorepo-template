@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "vtrois.gitmoji-vscode"
+    "vtrois.gitmoji-vscode",
+    "orta.vscode-jest"
   ]
 }
