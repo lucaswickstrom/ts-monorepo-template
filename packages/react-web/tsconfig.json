@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node",
+      "@emotion/react/types/css-prop"
+    ],
+    "isolatedModules": true,
+    "jsx": "preserve"
+  }
+}

@@ -1,9 +1,13 @@
 {
-  "name": "<repo-name>",
+  "name": "ts-monorepo-template",
   "version": "0.1.0",
-  "description": "Short summary of the service.",
+  "description": "Short summary of the project.",
   "author": "Lucas Wickström <lucaswickstrom.com>",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/<org-name>/<repo-name>.git"
@@ -14,9 +18,10 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "jest --watch"
+    "ws": "yarn workspace",
+    "wss": "yarn workspaces",
+    "test": "jest --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
@@ -29,6 +34,7 @@
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.4",
     "jest": "^27.3.1",

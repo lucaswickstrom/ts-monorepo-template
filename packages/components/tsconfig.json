@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/**/*.spec.*",
+    "src/**/*.stories.*"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "types": [
+      "node",
+      "@emotion/react/types/css-prop"
+    ],
+    "isolatedModules": true,
+    "jsx": "preserve"
+  }
+}
